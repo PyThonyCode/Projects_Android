@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/NAVHomeFragment"
+        android:title="Inicio"
+        android:icon="@drawable/home"/>
+    <item
+        android:id="@+id/NAVProgramaFragment"
+        android:title="Programacion"
+        android:icon="@drawable/schedule"/>
+    <item
+        android:id="@+id/NAVMapaFragment"
+        android:title="Mapa"
+        android:icon="@drawable/baseline_map_24"/>
+    <item
+        android:id="@+id/NAVExpositoresFragment"
+        android:title="Expositores"
+        android:icon="@drawable/baseline_people_24"/>
+
+</menu>

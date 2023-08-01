@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.Activities.InicioActivity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/TBMain"
+                android:title="I CONGRESO INTERNACIONAL"
+                android:background="#AC4949"
+                android:gravity="center"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp">
+            </View>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/AltoToolbar"
+                android:src="@drawable/logouns"
+                android:id="@+id/IVMain"
+                android:contentDescription="Logo UNS"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp">
+            </View>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="I CONGRESO INTERNACIONAL DE INGENIERÍA, SOCIEDAD Y DESARROLLO SOSTENIBLE"
+                android:gravity="center"
+                android:textStyle="bold">
+
+            </TextView>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/cuerpo">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp">
+                </View>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/congresoimg"
+                    android:src="@drawable/congreso"
+                    android:id="@+id/IVInicio"
+                    android:contentDescription="Logo UNS"/>
+
+
+            </LinearLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+
+    </FrameLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

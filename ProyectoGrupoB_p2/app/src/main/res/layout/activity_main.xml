@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/TBMain"
+            android:background="@color/toolbar">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:src="@drawable/logouns"/>
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+<!--
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/NAVHomeFragment"
+            android:layout_above="@+id/BNVMenu"
+            app:navGraph="@navigation/nav_graph"
+            app:defaultNavHost="true"/>
+
+-->
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/FMInicio"
+            android:layout_above="@+id/BNVMenu"
+            app:navGraph="@navigation/nav_graph"
+            app:defaultNavHost="true"
+            android:name="androidx.navigation.fragment.NavHostFragment">
+
+        </fragment>
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/BNVMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/navbar"
+            app:menu="@menu/bnv_menu" />
+
+
+    </RelativeLayout>
+
+
+
+
+    <!--<com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/TBMain"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/AltoToolbar"
+            android:src="@drawable/logouns"
+            android:id="@+id/IVMain"
+            android:contentDescription="Logo UNS"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+            <TextView
+            android:id="@+id/TVContexto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/shape_parrafo"
+            android:text="DESCRIPCION: La realidad aumentada es el término que se usa para describir al conjunto de tecnologías que permiten que un usuario visualice parte del mundo real a través de un dispositivo tecnológico con información gráfica añadida por este. "
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:textStyle="bold"></TextView>
+
+            <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:background="@drawable/shape_img"
+        android:src="@drawable/ra"
+        app:layout_anchor="@+id/relativeLayout"
+        app:layout_anchorGravity="center"></ImageView>
+
+    -->
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
