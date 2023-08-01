@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val mapFragment=supportFragmentManager.findFragmentById(R.id.mapa) as SupportMapFragment
+        val mapFragment=chldFragmentManager.findFragmentById(R.id.mapa) as SupportMapFragment
         mapFragment.getMapAsync(this)
     }
 
