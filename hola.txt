@@ -1,1 +1,8 @@
-asdas
+domingo:
+//crear carpeta raw en res
+//crear un json llamado map_style
+//en la parte de ubicacion:
+val ubicacion = la.....
+....
+googleMap.setMapStyle(MapStyleOptions.loadRawResourceStyle(this, R.raw.map_style))
+....
